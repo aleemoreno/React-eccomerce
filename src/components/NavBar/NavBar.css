@@ -1,0 +1,37 @@
+
+header {
+    background-color: #ffffff;
+    text-align: center; 
+}
+
+.logo-img{
+    width: 100%;
+    justify-content: center;
+}
+.logo-image {
+    justify-content: center;
+    width: 25%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #a83838;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-item {
+    margin: 0 50px;
+    color: rgb(20, 20, 20);
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.navbar-item:hover {
+    text-decoration: underline;
+}

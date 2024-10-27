@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "name": "CAJA SIMPLE - 250 g",
+      "price": 29940,
+      "img": "ruta/a/tu/imagen1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "CAFÉ BLEND REVOLUCIÓN - 1 KG",
+      "price": 69600,
+      "img": "ruta/a/tu/imagen2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "CAFÉ COLOMBIA CAUCA SUR - 250 GR",
+      "price": 21800,
+      "img": "ruta/a/tu/imagen3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "CAFÉ COLOMBIA TRES FUEGOS - 250 G",
+      "price": 25000,
+      "img": "ruta/a/tu/imagen4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "CAFÉ BLEND REVOLUCIÓN - 250G",
+      "price": 25800,
+      "img": "ruta/a/tu/imagen5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "CAFÉ FUEGO NEGRO - 250 G",
+      "price": 21800,
+      "img": "ruta/a/tu/imagen6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "CAFÉ COLOMBIA DESCAFEINADO 1 KG",
+      "price": 62800,
+      "img": "ruta/a/tu/imagen7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "CAFÉ COLOMBIA TOLIMA - 1 KG",
+      "price": 64900,
+      "img": "ruta/a/tu/imagen8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "CAFÉ VOLTURNO - BRASIL - 1 KG",
+      "price": 56900,
+      "img": "ruta/a/tu/imagen9.jpg"
+    },
+    {
+      "id": 10,
+      "name": "CAFÉ BLEND ORIGEN - 1 KG",
+      "price": 55500,
+      "img": "ruta/a/tu/imagen10.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Curso de BARISTA INTEGRAL",
+      "price": 230000,
+      "img": "ruta/a/tu/imagen11.jpg"
+    },
+    {
+      "id": 12,
+      "name": "TALLER DE AEROPRESS",
+      "price": 40000,
+      "img": "ruta/a/tu/imagen12.jpg"
+    }
+  ]
+  
