@@ -1,0 +1,12 @@
+body {
+    background-color: #ffffff;
+    padding: auto;
+    margin: auto;
+}
+
+.body-title-cards {
+    color: black;
+    text-align: center;
+    padding: 50px;
+    font-size: 25px;
+}

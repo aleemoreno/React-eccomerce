@@ -1,15 +1,18 @@
-import React from "react";
-import './Productcard.css';
 
-const Productcard = ({ product }) => {
+import React from "react";
+import { Link } from "react-router-dom"; 
+import './ProductCard.css';
+
+const ProductCard = ({ product }) => {
     return (
         <div className="product-card">
-            <img src={product.img} alt={product.name} className = "product-image"/>
-            <h3 className = "product-name"> {product.name}</h3>
-            <p className = "product-price">{product.price}</p>
-            <button className = "add-to-cart">Agregar al Carrito</button>
+            <img src={product.img} alt={product.name} className="product-image" />
+            <h3 className="product-name">{product.name}</h3>
+            <p className="product-price">{product.price}</p>
+            {/* boton */}
+            <Link to={`/product/${product.id}`} className="view-details-button">Ver Detalles</Link>
         </div>
-    )
+    );
 }
 
 export default ProductCard;

@@ -1,7 +1,17 @@
-.Cartwidget-img {
-    width: 50px;
-    padding-left: 95%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+.Cartwidget-icon {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    position: absolute; 
+    top: 110px; 
+    right: 21%; 
+    background-color: transparent; 
+    z-index: 1000; 
+    cursor: pointer;
+  }
 
-}
+  .Cartwidget-img {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 5px; 
+  }

@@ -1,24 +1,41 @@
-
 import React from 'react';
 import './NavBar.css';
-import '../CartWidget/CartWidget.css'
 import logo from '../../../images/logo.png'; 
-import CartWidget from '../CartWidget/CartWidget'
+import CartWidget from '../CartWidget/CartWidget';
+import { useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
+    const navigate = useNavigate();
+
+    const handleSelectCategory = (category) => {
+        navigate(`/${category}`);  
+    };
+
     return (
         <header>
             <div className="logo-img">
-                <img src={logo} alt="Logo" className='logo-image' /> <CartWidget/>
+                <img src={logo} alt="Logo" className='logo-image' /> 
+                <div className="cart-container">
+                    <CartWidget />
+                </div>                                                                                                                                                                                                            
             </div>
+            
             <nav className="navbar">
                 <ul className="navbar-links">
-                    <li className="navbar-item">Inicio</li>
-                    <li className="navbar-item">Catálogo</li>
-                    <li className="navbar-item">Sobre nosotros</li>
-                    <li className="navbar-item">Contáctanos</li>
+                    <li className="navbar-item" onClick={() => navigate('/')}>INICIO</li>
+                    <li className="navbar-item dropdown">
+                        PRODUCTOS
+                        <ul className="dropdown-menu">
+                            <li className="dropdown-item" onClick={() => handleSelectCategory('cafes')}>Café de Especialidad</li>
+                            <li className="dropdown-item" onClick={() => handleSelectCategory('accesorios')}>Accesorios</li>
+                            <li className="dropdown-item" onClick={() => handleSelectCategory('cursos')}>Cursos - Escuela de Café</li>
+                        </ul>
+                    </li>
+                    <li className="navbar-item">SOBRE NOSOTROS</li>
+                    <li className="navbar-item">CONTÁCTANOS</li>
                 </ul>
             </nav> 
+            <h2 className="body-title-cards">ELIGE, PAGA Y RECIBE TU PEDIDO SIN MOVERTE DE TU CASA.</h2>
         </header>
     );
 }

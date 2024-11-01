@@ -1,75 +1,203 @@
 [
     {
       "id": 1,
+      "category":"cafes", 
       "name": "CAJA SIMPLE - 250 g",
-      "price": 29940,
-      "img": "ruta/a/tu/imagen1.jpg"
+      "price": "$29940",
+      "img": "../images/fuego-cafe-cajasimple.webp"
     },
     {
       "id": 2,
+      "category":"cafes", 
       "name": "CAFÉ BLEND REVOLUCIÓN - 1 KG",
-      "price": 69600,
-      "img": "ruta/a/tu/imagen2.jpg"
+      "price": "$69600",
+      "img": "../images/fuego-cafe-blend.webp"
     },
     {
       "id": 3,
+      "category":"cafes", 
       "name": "CAFÉ COLOMBIA CAUCA SUR - 250 GR",
-      "price": 21800,
-      "img": "ruta/a/tu/imagen3.jpg"
+      "price": "$21800",
+      "img": "../images/fuego-cafe-colombia.webp"
     },
     {
       "id": 4,
+      "category":"cafes", 
       "name": "CAFÉ COLOMBIA TRES FUEGOS - 250 G",
-      "price": 25000,
-      "img": "ruta/a/tu/imagen4.jpg"
+      "price": "$25000",
+      "img": "../images/fuego-cafe-tresfuegos.webp"
     },
     {
       "id": 5,
+      "category":"cafes", 
       "name": "CAFÉ BLEND REVOLUCIÓN - 250G",
-      "price": 25800,
-      "img": "ruta/a/tu/imagen5.jpg"
+      "price": "$25800",
+      "img": "../images/fuego-cafe-blend250gr.webp"
     },
     {
       "id": 6,
+      "category":"cafes", 
       "name": "CAFÉ FUEGO NEGRO - 250 G",
-      "price": 21800,
-      "img": "ruta/a/tu/imagen6.jpg"
+      "price": "$21800",
+      "img": "../images/fuego-cafe-fuegonegro.webp"
     },
     {
       "id": 7,
+      "category":"cafes", 
       "name": "CAFÉ COLOMBIA DESCAFEINADO 1 KG",
-      "price": 62800,
-      "img": "ruta/a/tu/imagen7.jpg"
+      "price": "$62800",
+      "img": "../images/fuego-cafe-descaefinado.webp"
     },
     {
       "id": 8,
+      "category":"cafes", 
       "name": "CAFÉ COLOMBIA TOLIMA - 1 KG",
-      "price": 64900,
-      "img": "ruta/a/tu/imagen8.jpg"
+      "price": "$64900",
+      "img": "../images/fuego-cafe-tolima.webp"
     },
     {
       "id": 9,
+      "category":"cafes", 
       "name": "CAFÉ VOLTURNO - BRASIL - 1 KG",
-      "price": 56900,
-      "img": "ruta/a/tu/imagen9.jpg"
+      "price": "$56900",
+      "img": "../images/fuego-cafe-brasil.webp"
     },
     {
       "id": 10,
+      "category":"cafes", 
       "name": "CAFÉ BLEND ORIGEN - 1 KG",
-      "price": 55500,
-      "img": "ruta/a/tu/imagen10.jpg"
+      "price": "$55500",
+      "img": "../images/fuego-cafe-blendorigen.webp"
     },
     {
       "id": 11,
+      "category":"cursos", 
       "name": "Curso de BARISTA INTEGRAL",
-      "price": 230000,
-      "img": "ruta/a/tu/imagen11.jpg"
+      "price": "$230000",
+      "img": "../images/cursodebarista-integral.webp"
     },
     {
       "id": 12,
+      "category":"cursos", 
       "name": "TALLER DE AEROPRESS",
-      "price": 40000,
-      "img": "ruta/a/tu/imagen12.jpg"
-    }
-  ]
+      "price": "$40000",
+      "img": "../images/taller-aeropress.webp"
+    },
+    {
+      "id": 13,
+      "name": "BARISTA INICIAL | SÁBADOS",
+      "category": "cursos",
+      "price": 150000,
+      "img":"https://acdn.mitiendanube.com/stores/001/148/252/products/whatsapp-image-2024-09-11-at-13-24-19-7b48c625213f4a35d917260819444820-640-0.webp"
+    },
+    {
+      "id": 14,
+      "name": "TALLER V60",
+      "category": "cursos",
+      "price": 55000,
+      "img":"https://acdn.mitiendanube.com/stores/001/148/252/products/whatsapp-image-2024-10-22-at-14-34-51-8a52a2f7557391496717296204118227-640-0.webp"
+    },
+    {
+      "id": 15,
+      "name": "TALLER DE CALIBRACIÓN",
+      "category": "cursos",
+      "price": 55000,
+      "img":"https://acdn.mitiendanube.com/stores/001/148/252/products/whatsapp-image-2024-10-15-at-15-53-58-1-26cd1f288b831b6c5f17290185670279-640-0.webp"
+    },
+    {
+      "id": 16,
+      "name": "TALLER SENSORIAL",
+      "category": "cursos",
+      "price": 55000,
+      "img":"https://acdn.mitiendanube.com/stores/001/148/252/products/whatsapp-image-2024-09-11-at-13-27-39-a8c43cf5bbea9ad72817289372495304-640-0.webp"
+    },  
+        {
+            "id": 17,
+            "name": "Bolsa Arpillera",
+            "category": "accesorios",
+            "price": 1,
+            "img": "https://acdn.mitiendanube.com/stores/001/148/252/products/inshot_20240826_175133140-a9510b7b2c3229cdb717247069313662-1024-1024.webp"
+        },
+        {
+            "id": 18,
+            "category": "accesorios",
+            "name": "Filtros Chemex",
+            "price": 30100,
+            "img": "https://acdn.mitiendanube.com/stores/001/148/252/products/filtros-chemex-1-2f60b813a979c747ef17201054920688-1024-1024.webp"
+        },
+        {
+            "id": 19,
+            "category": "accesorios",
+            "name": "URNEX GRINDZ x 430 grs",
+            "price": 99100,
+            "img": "https://acdn.mitiendanube.com/stores/001/148/252/products/urnex-tienda-c33a923a853bb5e58317084625083245-640-0.webp"
+        },
+        {
+            "id": 20,
+            "category": "accesorios",
+            "name": "URNEX CAFIZA POWDER TABLETS x 100 Pastillas",
+            "price": 61500,
+            "img": "https://acdn.mitiendanube.com/stores/001/148/252/products/cafiza-tienda-98090c6f8368395bb017084609343766-640-0.webp"
+        },
+        {
+            "id": 21,
+            "category": "accesorios",
+            "name": "TOTE BAG de arpillera reciclada",
+            "price": 14600,
+            "img": "https://acdn.mitiendanube.com/stores/001/148/252/products/4-d84d4ae2e2a2948afd17201055172193-640-0.webp"
+        },
+        {
+            "id": 22,
+            "category": "accesorios",
+            "name": "Filtros V60",
+            "price": 26300,
+            "img": "https://acdn.mitiendanube.com/stores/001/148/252/products/diseno-sin-titulo-2-43731b032cf4051fa417201057346442-640-0.webp"
+        },
+        {
+            "id": 23,
+            "category": "accesorios",
+            "name": "Buzos Fuego Negro - S",
+            "price": 36300,
+            "img": "https://acdn.mitiendanube.com/stores/001/148/252/products/fuego_junio-web-03756-3a6d95d6ad852092d317207969584156-640-0.webp"
+        },
+        {
+            "id": 24,
+            "category": "accesorios",
+            "name": "Remeras Abuelo - Oversize XS",
+            "price": 30300,
+            "img": "https://acdn.mitiendanube.com/stores/001/148/252/products/fuego_junio-web-03748-8033e6cb75b3a6227d17207979794657-640-0.webp"
+        },
+        {
+            "id": 25,
+            "category": "accesorios",
+            "name": "Cafetera Cerámica Simil V60 Azul",
+            "price": 40000,
+            "img": "https://acdn.mitiendanube.com/stores/001/148/252/products/3-4d98acdfde9ab12d5517201055477490-1024-1024.webp"
+        },
+        {
+            "id": 26,
+            "category": "accesorios",
+            "name": "Cafetera Cerámica Simil Kalita Blanca + Decantador",
+            "price": 96400,
+            "img": "https://acdn.mitiendanube.com/stores/001/148/252/products/12-combo-kalita-jarra-blanca-1-29b76722aaa4ea339117200244075375-640-0.webp"
+        },
+        {
+            "id": 27,
+            "category": "accesorios",
+            "name": "Cepillo de Limpieza para Molino",
+            "price": 35700,
+            "img": "https://acdn.mitiendanube.com/stores/001/148/252/products/cepillo-molino-2-e739b793a35d41733617157185777596-640-0.webp"
+        },
+        {
+            "id": 28,
+            "category": "accesorios",
+            "name": "Pava Barista p/ Café de Acero Inoxidable con Termómetro 1.2 L",
+            "price": 92400,
+            "img": "https://acdn.mitiendanube.com/stores/001/148/252/products/dij03678-d-9c8a70b0e8ec82896a17157178373996-1024-1024.webp"
+        }     
+    ]
+    
+  
+
+  
   
