@@ -1,0 +1,32 @@
+/* src/components/ItemDetail.css */
+.item-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+.item-detail img {
+    width: 300px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.add-to-cart-btn {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    padding: 20px 30px;
+    background-color: #972626;
+    color: rgb(20, 20, 20);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -50,3 +50,11 @@
     display: inline-block; 
     margin-top: 10px; 
 }
+.item { 
+    display: grid;
+    grid-template-columns: repeat(4, 300px) ;
+    grid-gap: 3px;
+    padding: 30px 10px 100px 50px;
+ 
+}
+

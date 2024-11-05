@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import ProductCard from '../ProductCard/ProductCard';
+import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
 import "./ItemListContainer.css"; 
 
 const ItemListContainer = () => {
     const { category } = useParams();
-    console.log('Çategoria actual:', category); 
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
@@ -25,14 +24,12 @@ const ItemListContainer = () => {
 
     return (
         <div className="item-list-container">
-            {products.length > 0 ? (
-                products.map((product) => (
-                    <ProductCard key={product.id} product={product} />
-                ))
-            ) : (
-                <p>No hay productos disponibles en esta categoría.</p>
-            )}
-        </div>
+        {products.length > 0 ? (
+            <ItemList products={products} /> 
+        ) : (
+            <p>No hay productos disponibles en esta categoría.</p>
+        )}
+    </div>
     );
 };
 

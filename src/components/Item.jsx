@@ -1,9 +1,10 @@
 
 import React from "react";
 import { Link } from "react-router-dom"; 
-import './ProductCard.css';
+import './Item.css';
+import "./ItemList.css"
 
-const ProductCard = ({ product }) => {
+const Itemlist = ({ product }) => {
     return (
         <div className="product-card">
             <img src={product.img} alt={product.name} className="product-image" />
@@ -15,4 +16,4 @@ const ProductCard = ({ product }) => {
     );
 }
 
-export default ProductCard;
+export default Itemlist; 
