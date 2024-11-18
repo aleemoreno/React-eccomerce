@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
 import "./ItemListContainer.css"; 
+import { cartContext } from "../context/cartContext";
 
 const ItemListContainer = () => {
     const { category } = useParams();
     const [products, setProducts] = useState([]);
+
+    const value = useContext (cartContext)
 
     useEffect(() => {
         fetch("/products.json") 

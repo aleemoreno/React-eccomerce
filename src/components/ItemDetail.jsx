@@ -1,8 +1,26 @@
-// src/components/ItemDetail.jsx
+
 import React, { useState } from 'react';
 import "./ItemDetail.css";
+import ItemCount from './ItemCount'
 
-const ItemDetail = ({ product }) => {
+function ItemDetail({ product }) {
+  return (
+    <div className="item-detail">
+      <img src={product.img} alt={product.name} />
+      <h2>{product.name}</h2>
+      <p>{product.description}</p>
+      <p>Precio: ${product.price}</p>
+      {}
+      <ItemCount product={product} />
+    </div>
+  );
+}
+
+export default ItemDetail;
+
+
+
+/* const ItemDetail = ({ product }) => {
     const [quantity, setQuantity] = useState(1);
 
     const handleIncrease = () => setQuantity(prev => prev + 1);
@@ -25,5 +43,4 @@ const ItemDetail = ({ product }) => {
         </div>
     );
 };
-
-export default ItemDetail;
+ */
