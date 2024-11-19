@@ -1,46 +1,21 @@
-
-import React, { useState } from 'react';
+import React from 'react';
 import "./ItemDetail.css";
-import ItemCount from './ItemCount'
+import ItemCount from './ItemCount';
 
 function ItemDetail({ product }) {
+  if (!product) {
+    return <p>Cargando detalles del producto...</p>;  // O cualquier otro mensaje que prefieras
+  }
+  
   return (
     <div className="item-detail">
       <img src={product.img} alt={product.name} />
       <h2>{product.name}</h2>
       <p>{product.description}</p>
       <p>Precio: ${product.price}</p>
-      {}
       <ItemCount product={product} />
     </div>
   );
 }
 
 export default ItemDetail;
-
-
-
-/* const ItemDetail = ({ product }) => {
-    const [quantity, setQuantity] = useState(1);
-
-    const handleIncrease = () => setQuantity(prev => prev + 1);
-    const handleDecrease = () => setQuantity(prev => (prev > 1 ? prev - 1 : 1));
-
-    return (
-        <div className="item-detail">
-            <img src={product.img} alt={product.name} />
-            <h2>{product.name}</h2>
-            <p>{product.description}</p>
-            <p>Precio:{product.price}</p>
-
-            <div className="quantity-controls">
-                <button onClick={handleDecrease}>-</button>
-                <span>{quantity}</span>
-                <button onClick={handleIncrease}>+</button>
-            </div>
-
-            <button className="add-to-cart-btn">Agregar al carrito</button>
-        </div>
-    );
-};
- */

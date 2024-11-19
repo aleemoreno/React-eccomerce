@@ -1,27 +1,25 @@
-// src/components/ItemDetailContainer.jsx
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemDetail from './ItemDetail';
+import { getDetail } from '../firebase/db';
 
 const ItemDetailContainer = () => {
-    const { productId } = useParams();
-    const [product, setProduct] = useState(null);
+    const [product, setProduct] = useState(); 
+    const { id } = useParams();
 
     useEffect(() => {
-        fetch('/products.json')
-            .then(response => response.json())
-            .then(data => {
-                const selectedProduct = data.find(item => item.id === parseInt(productId));
-                setProduct(selectedProduct);
-            })
-            .catch(error => console.error("Error fetching product details:", error));
-    }, [productId]);
+         console.log("Producto ID:", id);  
+        const fetchData = async () => {
+            const productData = await getDetail(id);
+            setProduct(productData); 
+        };
+        
+        fetchData(); 
+    }, [id]);
 
-    if (!product) {
-        return <p>Cargando detalles del producto...</p>;
-    }
-
-    return <ItemDetail product={product} />;
-};
+    return (
+        <ItemDetail product={product} />
+    );
+}
 
 export default ItemDetailContainer;

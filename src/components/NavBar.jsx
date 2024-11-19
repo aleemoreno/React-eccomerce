@@ -26,7 +26,7 @@ const NavBar = () => {
                     <li className="navbar-item dropdown">
                         PRODUCTOS
                         <ul className="dropdown-menu">
-                            <li className="dropdown-item" onClick={() => handleSelectCategory('cafes')}>Café de Especialidad</li>
+                            <li className="dropdown-item" onClick={() => handleSelectCategory('cafe')}>Café de Especialidad</li>
                             <li className="dropdown-item" onClick={() => handleSelectCategory('accesorios')}>Accesorios</li>
                             <li className="dropdown-item" onClick={() => handleSelectCategory('cursos')}>Cursos - Escuela de Café</li>
                         </ul>
