@@ -13,18 +13,6 @@ const ItemListContainer = () => {
   const value = useContext (cartContext)
 
     useEffect(() => {
-      /* fetch("/products.json") 
-        .then((response) => response.json())
-        .then((data) => {
-             // Filtrar productos aquí después de cargar los datos
-              const filteredProducts = category 
-              ? data.filter(product => product.category === category) 
-             : data;
-         setProducts(filteredProducts); console.log("Productos filtrados:", filteredProducts);
-
-         })
-     .catch((error) => console.error("Error fetching products:", error)); */
-
      if (!category) {
         getProducts()  
         .then(res => setProducts(res))

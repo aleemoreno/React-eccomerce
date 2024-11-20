@@ -2,29 +2,27 @@ import { cartContext } from './cartContext'
 import { useState} from 'react'
 
 function CartProvider ({ children }) {
-  const [cart, setCart] = useState ([])
+const [cart, setCart] = useState ([])
 
-  const addToCart = item => setCart ([ ...cart, item])
+const addToCart = item => setCart ([ ...cart, item])
 
- // Función para eliminar un artículo del carrito
- const removeFromCart = (itemId) => {
-  setCart(cart.filter((item) => item.id !== itemId)); // Filtra el artículo por ID
-};
+const getQuantity = () => {
+   const qtyOnly = cart.map(item => item.qty)
+   const total = qtyOnly.reduce (( acc, current) => acc + current, 0)
+   return total
+  }
 
-// Función para obtener el número de artículos en el carrito
-const getCartCount = () => {
-  return cart.length; // Cuenta el número total de artículos en el carrito
-};
 
-const getQuantity = (itemId) => {
-  const item = cart.filter((item) => item.id === itemId); // Filtra el artículo por ID
-  return item.length; // Retorna la cantidad de ese artículo en el carrito
-}
-
-    return (
-        <cartContext.Provider value= {{ cart, addToCart, getQuantity}}>
-          {children}
-        </cartContext.Provider>
+  const getTotal = () => {
+    const priceOnly = cart.map(item => item.price * item.qty);
+    const total = priceOnly.reduce((acc, current) => acc + current, 0);
+    return total;
+ };
+ 
+  return (
+     <cartContext.Provider value= {{ cart, addToCart, getQuantity, getTotal}}>
+     {children}
+     </cartContext.Provider>
     )
 }
 

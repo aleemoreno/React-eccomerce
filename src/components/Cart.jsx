@@ -1,7 +1,25 @@
-import { useCart } from '../context/cartContext';
+import { useCart } from '../context/cartContext'
+import { createOrder } from '../firebase/db'
+import { serverTimestamp } from 'firebase/firestore'
 
 function Cart() {
-  const { cart } = useCart(); // Usar el hook para obtener el carrito
+  const { cart, getTotal } = useCart(); // Usar el hook para obtener el carrito
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+   
+    const form = e.target
+    const [name, email, phone] = form
+    
+    const order = {
+      buyer: { name: name.value , email: email.value, phone: phone.value },
+      items: cart,
+      date: serverTimestamp(),
+      total: getTotal(),
+    }
+
+    createOrder(order)
+  }
 
   return (
     <div>

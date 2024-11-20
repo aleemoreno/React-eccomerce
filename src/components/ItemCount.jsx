@@ -9,8 +9,9 @@ const handleAdd = () => setCount (count + 1)
 const handleSub = () => setCount (count - 1)
 
 const handleAddToCart = () => {
-    addToCart(product, count); 
-  };
+  const productWithQty = { ...product, qty: count }; 
+  addToCart(productWithQty); 
+};
 
   return (
     <div>

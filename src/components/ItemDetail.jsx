@@ -4,7 +4,7 @@ import ItemCount from './ItemCount';
 
 function ItemDetail({ product }) {
   if (!product) {
-    return <p>Cargando detalles del producto...</p>;  // O cualquier otro mensaje que prefieras
+    return <p>Cargando detalles del producto...</p>;  
   }
   
   return (
